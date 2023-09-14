@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+:root{
+    --card-size: 400px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Charm', cursive;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #27ae60, #2980b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+.start-screen h1{
+    color: #f1c40f;
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+.start-screen .buttons{
+    text-align: center;
+}
+.buttons button{
+    border: none;
+    background-color: #c0392b;
+    color: #f1c40f;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cards{
+    width: var(--card-size);
+    background-color: #c0392b;
+    padding: 15px;
+    display: grid;
+    border-radius: 10px;
+    gap: 12px;
+}
+.cards#card4x3{
+    aspect-ratio: 4/3;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+}
+.cards#card4x4{
+    aspect-ratio: 1/1;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+.cards#card4x5{
+    aspect-ratio: 4/5;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+.cards#card5x6{
+    aspect-ratio: 5/6;
+    grid-template: repeat(6, 1fr) / repeat(5, 1fr);
+}
+.hide{
+    display: none;
+}
+.cards .card{
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+.card .view{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+    background-color: #fff;
+    pointer-events: none;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .3s;
+}
+.card .back-view img{
+    width: 100%;
+}
+.card .back-view{
+    transform: rotateY(-180deg);
+}
+.card.flip .back-view{
+    transform: rotateY(0);
+}
+.card.flip .front-view{
+    transform: rotateY(180deg);
+}
+.card.shake{
+    animation: shake .3s ease-in-out;
+}
+@keyframes shake{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-13px);
+    }
+    40%{
+        transform: translateX(13px);
+    }
+    60%{
+        transform: translateX(-8px);
+    }
+    80%{
+        transform: translateX(8px);
+    }
+}
+.options button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+#newGame{
+    background-color: #0652DD;
+}
+#restartGame{
+    background-color: #006266;
+}

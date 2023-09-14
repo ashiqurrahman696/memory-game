@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">  
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="start-screen">
+        <h1>Memory Game</h1>
+        <div class="buttons">
+            <button type="button" id="btn4x3">4x3</button>
+            <button type="button" id="btn4x4">4x4</button>
+            <button type="button" id="btn4x5">4x5</button>
+            <button type="button" id="btn5x6">5x6</button>
+        </div>
+    </div>
+    <div class="cards hide" id="card4x3">
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards hide" id="card4x4">
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards hide" id="card4x5">
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/10.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cards hide" id="card5x6">
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/10.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/11.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/12.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/13.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/14.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/15.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/7.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/8.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/9.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/10.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/11.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/12.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/13.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/14.jpg" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <div class="view front-view"></div>
+            <div class="view back-view">
+                <img src="images/15.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="options hide">
+        <button type="button" id="newGame">New Game</button>
+        <button type="button" id="restartGame">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
