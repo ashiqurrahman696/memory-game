@@ -8,7 +8,6 @@ let cards4x5screen = document.querySelector('#card4x5');
 let cards4x5 = document.querySelectorAll('#card4x5 .card');
 let cards5x6screen = document.querySelector('#card5x6');
 let cards5x6 = document.querySelectorAll('#card5x6 .card');
-let cards = document.querySelectorAll('.card');
 let options = document.querySelector('.options');
 let newGameBtn = document.getElementById('newGame');
 let restartGameBtn = document.getElementById('restartGame');
@@ -246,13 +245,6 @@ function newGame(){
     shuffleCards();
 }
 
-function restartGame(){
-    cards.forEach(card => {
-        card.classList.remove('flip');
-    });
-    shuffleCards();
-}
-
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         if(button.id == 'btn4x3'){
@@ -292,4 +284,4 @@ cards5x6.forEach(card => {
 });
 
 newGameBtn.addEventListener('click', newGame);
-restartGameBtn.addEventListener('click', restartGame);
+restartGameBtn.addEventListener('click', shuffleCards);
